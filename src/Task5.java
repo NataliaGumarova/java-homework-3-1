@@ -6,7 +6,7 @@ public class Task5 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите число");
         int N = scan.nextInt();
-        System.out.println("Введите порядок бита, который нужно обнулить");
+        System.out.println("Введите разряд бита, который нужно обнулить");
         int i = scan.nextInt();
         int itog = N & ~ (1 << i);
         String binary = Integer.toBinaryString(itog);
