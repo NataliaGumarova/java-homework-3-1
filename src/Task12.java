@@ -11,8 +11,8 @@ public class Task12 {
         String binary = Integer.toBinaryString(n);
         System.out.println(binary);
         while (m != 0){
-            if ((m & (1 << 0)) == 0 ) {
-                i = i + 1;
+            if ((m & 1) == 0 ) {
+                i++;
                 System.out.println("в двоичной записи числа " + n + " есть нули");
                 break;
             }
